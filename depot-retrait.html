@@ -19,7 +19,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/retrait.css">
+  <link rel="stylesheet" href="css/depot-retrait.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -45,7 +45,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Transferts</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="retrait.html">Retrait</a>
+          <a class="dropdown-item" href="retrait.html">Dépot / Retrait</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="virement.html">Virement</a>
         </div>
@@ -71,7 +71,23 @@
   </header>
 
   <main class="container">
-
+    <form action="">
+      <div>
+        <p>Numéro du compte</p>
+        <input class="form-control" type="text" placeholder="Numéro du compte"> 
+      </div>
+      <p>Dépot /Retrait</p> 
+      <select class="form-control form-control-lg">
+        <option>Dépot /Retrait</option>
+        <option>Dépot</option>
+        <option>Retrait</option>
+      </select>
+      <div>
+        <p>Montant</p>
+        <input class="form-control" type="text" placeholder="5 euros minimum"> 
+      </div>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Valider</button>
+    </form>
   </main>
 
   <footer class="jumbotron jumbotron-fluid">
@@ -88,7 +104,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/retrait.js"></script>
+  <script src="js/depot-retrait.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
