@@ -19,38 +19,42 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/connexion.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <nav>
-    <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="information.html">Informations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog.html">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="faq.html">FAQ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="transfert.html">Transferts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="compte.html">Comptes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </nav>
+    <nav>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Informations</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="articles.html">Voir les dernières nouvelles</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="bourse.html">Taux en bourse</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transfert.html">Transferts</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="connexion.html">Se connecter</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="creerCompte.html">Créer un compte</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
   <header class="jumbotron jumbotron-fluid">
     <section class="container">
@@ -77,7 +81,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/blog.js"></script>
+  <script src="js/connexion.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
