@@ -19,7 +19,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/transfert.css">
+  <link rel="stylesheet" href="css/virement.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -69,7 +69,33 @@
   </header>
 
   <main class="container">
-
+    <form action="">
+      <p>Compte à débiter</p> 
+      <select class="form-control form-control-lg">
+        <option>Sélectionner le compte à débiter</option>
+        <option>Compte 1</option>
+        <option>Compte 2</option>
+        <option>Compte 3</option>
+        <option>Compte 4</option>
+        <option>Compte 5</option>
+        <option>Compte 6</option>
+      </select>
+      <div>
+        <p>Montant à transférer</p>
+        <input class="form-control" type="text" placeholder="50 euros minimum"> 
+      </div>
+      <p>Compte à créditer</p>
+      <select class="form-control form-control-lg">
+        <option>Sélectionner le compte à créditer</option>
+        <option>Compte 1</option>
+        <option>Compte 2</option>
+        <option>Compte 3</option>
+        <option>Compte 4</option>
+        <option>Compte 5</option>
+        <option>Compte 6</option>
+      </select>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Valider la transaction</button>
+    </form>
   </main>
 
   <footer class="jumbotron jumbotron-fluid">
@@ -86,7 +112,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/transfert.js"></script>
+  <script src="js/virement.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
