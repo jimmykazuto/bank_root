@@ -87,7 +87,23 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* General rules */
+* {
+  margin: 0;
+}
 
+header, footer {
+  background-color: brown;
+  color: cyan;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 5rem auto;
+  width: 80%;
+}
 
 
 /* Utility classes */
