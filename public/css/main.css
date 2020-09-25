@@ -91,20 +91,14 @@ textarea {
   margin: 0;
 }
 
-header, footer {
-  background-color: brown;
-  color: cyan;
-  height: 30vh;
+header {
+  background-color:lightgray;
+  color: #007bff;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-main {
-  margin: 5rem auto;
-  width: 80%;
-}
-
 
 /* Utility classes */
 

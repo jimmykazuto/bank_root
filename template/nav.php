@@ -29,7 +29,7 @@
 <nav>
   <ul class="nav nav-pills nav-fill">
     <li class="nav-item">
-        <a class="nav-link active" href="index.html">Accueil</a>
+        <a class="nav-link active" href="index.php">Accueil</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Informations</a>
