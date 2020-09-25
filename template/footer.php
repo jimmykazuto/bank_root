@@ -1,5 +1,12 @@
   </main>
 
+  <footer class="jumbotron-fluid">
+    <section class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </section>
+  </footer>
+
   <!-- Add your site or application content here -->
   <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

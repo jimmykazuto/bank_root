@@ -91,13 +91,12 @@ textarea {
   margin: 0;
 }
 
-header {
+header, footer {
   background-color:lightgray;
   color: #007bff;
   height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 /* Utility classes */
