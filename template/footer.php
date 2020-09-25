@@ -1,11 +1,4 @@
-</main>
-
-<footer class="jumbotron jumbotron-fluid">
-    <section class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </section>
-  </footer>
+  </main>
 
   <!-- Add your site or application content here -->
   <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
@@ -14,8 +7,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/layer.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <!-- <script src="js/layer.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -24,5 +17,4 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
