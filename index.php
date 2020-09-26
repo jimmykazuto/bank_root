@@ -7,8 +7,7 @@ include "template/header.php";
 <h2>Vos comptes</h2>
 
 <?php
-// include "data/accounts.php"
-include "template/main.php";
+include "data/accounts.php";
 ?>
 
 <!-- ne sert que pour faire transiter des petites données , un ? pour passer un paramètre-->
