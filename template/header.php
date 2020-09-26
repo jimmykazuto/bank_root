@@ -1,7 +1,7 @@
   <header class="jumbotron-fluid">
     <section class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <h1 class="display-4">Bank-Root</h1>
+      <p class="lead">Parce que le temps c'est de l'argent, laissez-nous vous en faire gagner.</p>
     </section>
   </header>
 
