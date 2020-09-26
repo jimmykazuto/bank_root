@@ -1,5 +1,3 @@
-  </main>
-
   <footer class="jumbotron-fluid">
     <section class="container">
       <h1 class="display-4">Fluid jumbotron</h1>
