@@ -1,6 +1,9 @@
   <footer class="jumbotron-fluid">
     <section class="container">
       <p class="lead">Copyright Bank-Root.com.</p>
+      <?php
+        echo "Aujourd'hui, nous sommes le " . date("d/m/Y")."<br>". "Il est  " . date("h:i:sa");;
+      ?>
     </section>
   </footer>
 
@@ -11,7 +14,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
   <!-- <script src="js/layer.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

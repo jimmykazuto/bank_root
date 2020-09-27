@@ -1,0 +1,32 @@
+.accordionObject{
+    float:left;
+  }
+  
+  .accordionObjectHeading{
+    cursor:pointer;
+    padding:10px;
+    background: lightgray;
+    color:#fff;
+  }
+  
+  /* Closed accordion classes */
+  .close .accordionObjectContent{
+    height:0px;
+    transform: scaleY(0);
+  }
+  
+  /* Open accordion classes */
+  .open .accordionObjectContent{
+    padding: 20px;
+  }
+  
+  .open .accordionObjectHeading{
+    background-color: #007bff;
+    color: lightgray;
+  }
+  
+  /* General rules */
+  h1 {
+    text-align: center;
+    padding: 1em 0;
+  }

@@ -5,5 +5,9 @@
 ?>
 
 <?php 
+    include ("data/articles.php");
+?>
+
+<?php 
     include ("template/footer.php");
 ?>

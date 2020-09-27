@@ -8,9 +8,10 @@ include "template/header.php";
 
 <?php
 include "data/accounts.php";
+// include "comptes.php";
 ?>
 
-<!-- ne sert que pour faire transiter des petites données , un ? pour passer un paramètre-->
+<!-- pour faire transiter des petites données -->
 <a href="comptes.php?param=DutextetransmisparURL">Voir vos comptes</a>
 
 <?php

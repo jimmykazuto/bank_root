@@ -20,6 +20,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="public/css/taux_bourse.css">
+  <link rel="stylesheet" href="public/css/faq.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
