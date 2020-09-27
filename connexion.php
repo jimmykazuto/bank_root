@@ -7,7 +7,8 @@
 <main class="container">
     <h4>Vous connecter : </h4>
 
-    <form action="connexion.php" method="post">
+    <!-- Sécurité pour empêcher un utilisateur malveillant d'hacker l'URL -->
+    <form action="connexion.php" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -24,13 +25,12 @@
 
         <div class = "connexion">
             <?php 
-                $email = "kaput@hotmail.fr";
-                $mot_de_passe = "lol";
-                if($email === $_POST['email'] ) {
+                if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ===  "lol")
+                {
                     echo "Bienvenue sur notre site";
                 }
                 else {
-                    echo "Adresse mail ou mot de passe erroné";
+                    echo "mot de passe erroné";
                 }
             ?>
         </div>

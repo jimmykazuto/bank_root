@@ -25,6 +25,6 @@
     ];
 
     foreach ($return as $key => $value) {
-        echo $value["name"] ."<br> ". $value["number"] . "<br>" . $value["owner"] . "<br>" . $value ["amount"] . "<br>" . $value["last_operation"] . "<br>" ;
+        echo "<span>" . $value["name"] ."<br> ". $value["number"] . "<br>" . $value["owner"] . "<br>" . $value ["amount"] . "<br>" . $value["last_operation"] . "</span>" . "<br>"  ;
     }
 ?>

@@ -4,8 +4,6 @@
     include ("template/header.php");
 ?>
 
-
-
 <main class="container">
     <form action="creerCompte.php" method="post">
 
@@ -41,7 +39,6 @@
                 <input type="text" name="city" class="form-control" id="inputCity" placeholder="Ville">
             </div>
         </div>
-
 
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -94,7 +91,7 @@
             <?php
                 if (isset($_POST['email']) AND isset($_POST['name']) AND isset($_POST['last_name']) AND isset($_POST['street']) AND isset($_POST['city']) AND isset($_POST['code_postal']) AND isset($_POST['state']) AND isset($_POST['compte']) AND isset($_POST['montant']))
                 {
-                    echo $_POST['email'] .'<br>'. $_POST['name'] .' '. $_POST['last_name'] .'<br>'. $_POST['street'] .'<br>'. $_POST['code_postal'] .' '. $_POST['city'] .'<br>'. $_POST['state'] .'<br>'. 'Type de compte : ' . $_POST['compte'] .'<br>'. $_POST['montant'] . ' euros'.'<br>';
+                    echo htmlspecialchars($_POST['email']) .'<br>'. htmlspecialchars($_POST['name']) .' '. htmlspecialchars($_POST['last_name']) .'<br>'.htmlspecialchars( $_POST['street']) .'<br>'. htmlspecialchars($_POST['code_postal']) .' '. htmlspecialchars($_POST['city']) .'<br>'. htmlspecialchars($_POST['state']) .'<br>'. 'Type de compte : ' . htmlspecialchars($_POST['compte']) .'<br>'. htmlspecialchars($_POST['montant']) . ' euros'.'<br>';
                 }
                 else // Il manque des paramètres, on avertit le visiteur
                 {
@@ -104,7 +101,6 @@
         </div>
 
         <p>Vous recevrez une confirmation de la création de votre compte par mail dans les 24h, après vérification des données envoyées.</p>
-
 
     </form>
   </main>

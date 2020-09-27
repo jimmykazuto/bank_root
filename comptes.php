@@ -5,13 +5,13 @@
 ?>
 
 <?php 
-  include "data/accounts.php";
+    include "data/accounts.php";
 ?>
 
 <?php
-foreach ($return as $key => $value): 
+foreach ($return as $value): 
 ?>
-    <p><?php echo $value["name"] ."<br> ". $value["number"] . "<br>" . $value["owner"] . "<br>" . $value ["amount"] . "<br>" . $value["last_operation"] . "<br>" ?></p>;
+    <span><?php echo $value["name"] ."<br> ". $value["number"] . "<br>" . $value["owner"] . "<br>" . $value ["amount"] . "<br>" . $value["last_operation"] . "<br>" ?></span>;
     <a href='compte.php?name=<?php echo $value["name"] ?>'>Consulter le compte</a>;
 <?php
 endforeach;

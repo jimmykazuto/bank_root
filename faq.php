@@ -2,11 +2,10 @@
     $site_title = "FAQ";
     include ("template/nav.php");
     include ("template/header.php");
-    echo "<br>";
 ?>
 
 <main class="container">
-    <section class="accordionObject close">
+    <section class="accordionObject open">
         <h2 class="accordionObjectHeading">Lorem ipsum dolor sit amet ?</h2>
         <article class="accordionObjectContent">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium 
@@ -24,7 +23,7 @@
         </article>
     </section>
   
-    <section class="accordionObject close">
+    <section class="accordionObject open">
         <h2 class="accordionObjectHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit ?</h2>
         <article class="accordionObjectContent">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem id deserunt, sequi 
@@ -38,7 +37,7 @@
         </article>
     </section>
   
-    <section class="accordionObject close">
+    <section class="accordionObject open">
         <h2 class="accordionObjectHeading">Ratione, ea? Repudiandae ipsa nesciunt pariatur ipsum?</h2>
         <article class="accordionObjectContent">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus molestias 
@@ -54,6 +53,5 @@
 </main>
 
 <?php 
-echo "<br>";
     include ("template/footer.php");
 ?>

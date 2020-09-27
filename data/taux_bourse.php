@@ -47,6 +47,6 @@
         ]
     ];
     foreach ($taux_bourse as $key => $value) {
-        echo $value["name"] ."<br> ". $value["Cours"] . "<br>" . $value["Variation"] . "<br>" . $value ["Ouverture"] . "<br>" . $value["+ Haut"] . "<br>" . $value["+ Bas"] . "<br>" . $value["Volume"] . "<br>" ; 
+        echo "<td>" .  " ". $value["name"] ." ". $value["Cours"] ." ". $value["Variation"] ." ". $value ["Ouverture"] ." ". $value["+ Haut"] ." ". $value["+ Bas"] ." ". $value["Volume"] . "<br>" . "</td>";
     }
 ?>
