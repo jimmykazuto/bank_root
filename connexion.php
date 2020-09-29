@@ -1,4 +1,9 @@
-<?php 
+<?php
+    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ===  "lol")
+    {
+        header("Location: index.php");
+        exit();
+    }
     $site_title = "Connexion";
     include ("template/nav.php");
     include ("template/header.php");
@@ -8,7 +13,7 @@
     <h4>Vous connecter : </h4>
 
     <!-- Sécurité pour empêcher un utilisateur malveillant d'hacker l'URL -->
-    <form action="connexion.php" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form action="connexion.php" method="post" action="">
 
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -24,10 +29,9 @@
         <button type="submit" class="btn btn-primary">Valider</button>
 
         <div class = "connexion">
-            <?php 
-                if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ===  "lol")
-                {
-                    echo "Bienvenue sur notre site";
+            <?php
+                if (empty($_POST['mot_de_passe'])) {
+                    echo "rentrez votre adresse mail et votre mot de passe";
                 }
                 else {
                     echo "mot de passe erroné";

@@ -14,11 +14,11 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="icon" href="img/money.png">
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <link rel="icon" href="public/img/money.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="public/css/normalize.css">
   <link rel="stylesheet" href="public/css/main.css">
   <link rel="stylesheet" href="public/css/taux_bourse.css">
   <link rel="stylesheet" href="public/css/faq.css">
@@ -28,7 +28,7 @@
 
 <body>
 
-<nav>
+<nav class="my-2 container-fluid">
   <ul class="nav nav-pills nav-fill">
     <li class="nav-item">
         <a class="nav-link active" href="index.php">Accueil</a>
@@ -36,7 +36,7 @@
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Informations</a>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="articles.php">Voir les dernières nouvelles</a>
+            <a class="dropdown-item" href="dernieres_nouvelles.php">Voir les dernières nouvelles</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="bourse.php">Taux en bourse</a>
         </div>
@@ -59,7 +59,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="creerCompte.php">Créer un compte</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="comptes.php">Consulter mes comptes</a>
+            <a class="dropdown-item" href="index.php">Consulter mes comptes</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="supprimer.php">Supprimer un compte</a>
       </div>

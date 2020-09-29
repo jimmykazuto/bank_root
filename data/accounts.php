@@ -1,6 +1,5 @@
-<!-- // function get_accounts() { -->
 <?php
-    $return = [
+    $accounts = [
         [
             "name" => "Compte courant",
             "number" => "N:0132520024 fr 45",
@@ -24,7 +23,5 @@
         ],
     ];
 
-    foreach ($return as $key => $value) {
-        echo "<span>" . $value["name"] ."<br> ". $value["number"] . "<br>" . $value["owner"] . "<br>" . $value ["amount"] . "<br>" . $value["last_operation"] . "</span>" . "<br>"  ;
-    }
+   
 ?>
