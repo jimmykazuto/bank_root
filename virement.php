@@ -11,7 +11,7 @@
             <div class="form-group col-md-6">
                 <label for="exampleFormControlSelect1">Quel type de compte voulez-vous débiter ?</label>
                 <select class="form-control" name="compte" id="exampleFormControlSelect1">
-                    <option>Choisissez le type de compte à ouvrir</option>
+                    <option>Choisissez le de compte</option>
                     <option>Compte courant</option>
                     <option>Compte joint</option>
                     <option>Compte à terme</option>
@@ -23,7 +23,7 @@
             <div class="form-group col-md-6">
                 <label for="exampleFormControlSelect1">Quel type de compte voulez-vous créditer ?</label>
                 <select class="form-control" name="compte" id="exampleFormControlSelect1">
-                    <option>Choisissez le type de compte à ouvrir</option>
+                    <option>Choisissez le compte</option>
                     <option>Compte courant</option>
                     <option>Compte joint</option>
                     <option>Compte à terme</option>

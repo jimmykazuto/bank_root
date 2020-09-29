@@ -80,7 +80,7 @@
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
-                    Je valide avoir pris connaissance des conditions d'utilisations
+                    Je confirme avoir pris connaissance des conditions d'utilisations
                 </label>
             </div>
         </div>

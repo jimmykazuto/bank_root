@@ -89,12 +89,13 @@ textarea {
 /* General rules */
 * {
   margin: 0;
+  font-size: large;
 }
 
 header, footer {
   background-color:lightgray;
   color: #007bff;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   align-items: center;
 }
