@@ -5,7 +5,7 @@
 ?>
 
 <main class="container">
-    <section class="accordionObject open">
+    <section class="accordionObject close">
         <h2 class="accordionObjectHeading">Lorem ipsum dolor sit amet ?</h2>
         <article class="accordionObjectContent">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium 
@@ -23,7 +23,7 @@
         </article>
     </section>
   
-    <section class="accordionObject open">
+    <section class="accordionObject close">
         <h2 class="accordionObjectHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit ?</h2>
         <article class="accordionObjectContent">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem id deserunt, sequi 
@@ -37,7 +37,7 @@
         </article>
     </section>
   
-    <section class="accordionObject open">
+    <section class="accordionObject close">
         <h2 class="accordionObjectHeading">Ratione, ea? Repudiandae ipsa nesciunt pariatur ipsum?</h2>
         <article class="accordionObjectContent">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloribus molestias 
@@ -51,6 +51,8 @@
         </article>
     </section>
 </main>
+
+<?php $script = "<script src='public/js/faq.js'></script>"; ?>
 
 <?php 
     include ("template/footer.php");

@@ -34,7 +34,7 @@ endforeach;
 ?>
 </div>
 
-<?php $script = "<script src='js/layer.js'></script>"; ?>
+<?php $script = "<script src='public/js/layer.js'></script>"; ?>
 
 <?php
 include "template/footer.php";

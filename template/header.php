@@ -1,6 +1,6 @@
   <header class="jumbotron-fluid">
     <section class="container">
-      <h1 class="display-4 p-0.5">Bank-Root</h1>
+      <h1 class="display-4 p-0">Bank-Root</h1>
       <p class="lead">Parce que le temps c'est de l'argent, laissez-nous vous en faire gagner.</p>
     </section>
   </header>
