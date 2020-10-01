@@ -90,14 +90,18 @@ textarea {
 * {
   margin: 0;
   font-size: large;
+  font-family: 'Secular One', sans-serif;
 }
 
 header, footer {
   background-color:lightgray;
   color: #007bff;
-  height: 50vh;
+  height: 30vh;
   display: flex;
   align-items: center;
+}
+h1 {
+  font-weight: bolder;
 }
 
 /* Utilty classes */
