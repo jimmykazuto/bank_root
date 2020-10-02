@@ -181,7 +181,8 @@ de connexion avec un formulaire.
 compte où il voit les informations du compte mais aussi les dernières opérations 
 effectuées sur le compte.
 
-##Spécifications techniques :
+##
+Spécifications techniques :
 
 - SGBD : MySQL
 
