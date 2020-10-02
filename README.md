@@ -102,7 +102,7 @@ Pour cela vous devrez peut-être utiliser les sessions.
 
 
 
-# Projet à rendre : Dynamiser le projet fil rouge
+# Dynamiser le projet fil rouge
 
 Le conseil d’administration a été très satisfait du premier jet de votre application 
 et la trouve intéressante. 
@@ -153,3 +153,51 @@ fichier et s’ils sont identiques l’utilisateur est redirigé vers l’applic
 Par exemple, vérifier que le type de compte est bien un type de compte autorisé 
 (courant, pel, livret a, perp …). 
 Vérifier également que les montant minimum à l’ouverture est bien d’au moins 50 euros. 
+
+# Créer et administrer une BDD
+
+Les bases de données (ou BDD) sont incontournables en programmation car même
+l’application la plus basique a besoin de stocker des données. 
+
+Au fil de ses itérations votre projet d’application bancaire prend de l’ampleur. 
+
+L’application se structure et commence à exploiter des données dans des fichiers. 
+
+Votre scrum master estime qu’il est maintenant temps d’intégrer une base de données 
+dans l’application et ainsi d’assurer la persistance mais aussi l’intégrité des données.
+
+## Spécifications fonctionnelles :
+
+- L’application n’est accessible qu’aux seuls utilisateurs connectés.
+
+- Quand un utilisateur non connecté va sur l’application il est redirigé vers une page 
+de connexion avec un formulaire.
+
+- Un utilisateur se connecte à l’aide d’une adresse mail et d’un mot de passe.
+
+- Une fois connecté, l’utilisateur voit uniquement ses comptes en banque personnels.
+
+- Quand l’utilisateur clique sur un compte en banque, il arrive sur une page dédié au 
+compte où il voit les informations du compte mais aussi les dernières opérations 
+effectuées sur le compte.
+
+##Spécifications techniques :
+
+- SGBD : MySQL
+
+- créer une base de données nommée banque_php mais aussi supprimer tout base de données 
+préexistante nommée banque_php de tel sorte que votre fichier puisse toujours être 
+importé sans conflit.
+
+- créer un utilisateur nommé banquePHP et supprimer tout utilisateur pré-existant portant 
+le même nom.
+ Vous êtes libres de choisir son mot de passe. 
+Cet utilisateur ne doit avoir les droits que sur la base de données banque_php.
+
+- Créer les tables nécessaires à l’application avec les types de données qui vous semblent 
+les plus pertinents et efficaces.
+
+- Insérer dans chaque table au moins 2 lignes.
+
+- Implantez un système de connexion des utilisateurs dans le projet, sans base de données 
+pour l’instant (un seul utilisateur peut se connecter).
