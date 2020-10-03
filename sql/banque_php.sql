@@ -1,41 +1,51 @@
+DROP USER IF EXISTS 'banquePHP'@'localhost';
+
+CREATE USER 'banquePHP'@'localhost' IDENTIFIED BY 'banquePHP';
+
 DROP DATABASE banque_php;
-CREATE DATABASE banque_php;
-CREATE TABLE utilisateur
+
+CREATE DATABASE banque_php DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+GRANT ALL ON `banque_php`.* TO 'banquePHP'@'localhost';
+
+CREATE TABLE Users
 (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nom VARCHAR (30) NOT NULL,
-    prenom VARCHAR (30) NOT NULL,
-    email VARCHAR (50) NOT NULL,
-    mot_de_passe VARCHAR (15) NOT NULL,
-    pays VARCHAR (50) NOT NULL,
-    adresse VARCHAR (50) NOT NULL,
-    code_postal VARCHAR (10) NOT NULL,
-    ville VARCHAR (50) NOT NULL
+    UserID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    UserName VARCHAR (30) NOT NULL,
+    UserLastName VARCHAR (30) NOT NULL,
+    UserEmail VARCHAR (50) NOT NULL,
+    UserPassword VARCHAR (15) NOT NULL,
+    UserCountry VARCHAR (50) NOT NULL,
+    UserAddress VARCHAR (50) NOT NULL,
+    UserPostalCode VARCHAR (10) NOT NULL,
+    UserCity VARCHAR (50) NOT NULL
 );
-CREATE TABLE compte
+INSERT INTO Users (UserName, UserLastName, UserEmail, UserPassword, UserCountry, UserAddress, UserPostalCode, UserCity)
+VALUES ('lerouxel', 'aurelie', 'aurelielerouxel@cacraint.fr', 'lol', 'france', '9 rue du buisson', 27180, 'st sebastien du mordor'),
+    ('Penneflamme', 'Katty', 'tunes@pas.fr', 'i8m2p', 'france', '2 notre', 01010, 'galaxie');
+
+CREATE TABLE Account
 (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    type_compte VARCHAR (30) NOT NULL,
-    numero_de_compte VARCHAR (30) NOT NULL,
-    date_creation_compte DATE NOT NULL
+    AccountID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    AccountType VARCHAR (30) NOT NULL,
+    AccountNumber VARCHAR (30) NOT NULL,
+    AccountCreationDate DATE NOT NULL
 );
-CREATE TABLE operation
+INSERT INTO Account (AccountType, AccountNumber, AccountCreationDate)
+VALUES ('livret_a', '0256kih2487', '2009/10/02'),
+    ('compte_courant', '2489fsf5487', '2006/08/19'),
+    ('compte_courant', '1464lol7458', '2001/04/24');
+
+CREATE TABLE Operation
 (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    type_operation VARCHAR (50) NOT NULL,
-    montant_operation INT NOT NULL,
-    date_operation DATETIME NOT NULL,
-    solde_compte INT NOT NULL,
-    compte_origine_debit VARCHAR (50),
-    compte_destinataire_credit VARCHAR (50)
+    OperationID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    OperationType VARCHAR (50) NOT NULL,
+    OperationPrice INT NOT NULL,
+    OperationDate DATETIME NOT NULL,
+    Account_balance INT NOT NULL,
+    AccountDebitOriginal VARCHAR (50),
+    AccountRecipientCredit VARCHAR (50)
 );
-INSERT INTO utilisateur (nom, prenom, email, mot_de_passe, pays, adresse, code_postal, ville)
- VALUES ('banquePHP', 'eskuhell', 'banquePHP@cnul.fr', 'i8m2p', 'france', '9 rue de la bdd', 01010, 'code'),
-        ('lerouxel', 'aurelie', 'aurelielerouxel@cacraint.fr', 'lol', 'france', '9 rue du buisson', 27180, 'st sebastien du mordor');
- INSERT INTO compte (type_compte, numero_de_compte, date_creation_compte)
- VALUES ('livret_a', '0256kih2487', '2009/10/02'),
-        ('compte_courant', '2489fsf5487', '2006/08/19'),
-        ('compte_courant', '1464lol7458', '2001/04/24');
- INSERT INTO operation (type_operation, montant_operation, date_operation, solde_compte, compte_origine_debit, compte_destinataire_credit)
- VALUES ('transfert', -1250, '03/10/2019 21:56:12', 1247.20,' livret_a', 'compte_courant'),
-        ('leclerc', -60.25, '01/10/2020 14:01:32', 1624.68, 'compte_courant', 'NULL');
+INSERT INTO Operation (OperationType, OperationPrice, OperationDate, Account_balance, AccountDebitOriginal, AccountRecipientCredit)
+VALUES ('transfert', -1250, '2019/10/03 21:56:12', 1247.20,' livret_a', 'compte_courant'),
+    ('leclerc', -60.25, '2020/10/01 14:01:32', 1624.68, 'compte_courant', 'NULL');
