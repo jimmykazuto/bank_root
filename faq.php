@@ -55,5 +55,5 @@
 <?php $script = "<script src='public/js/faq.js'></script>"; ?>
 
 <?php 
-    include ("template/footer.php");
+    include "template/footer.php";
 ?>
