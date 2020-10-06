@@ -166,23 +166,7 @@ L’application se structure et commence à exploiter des données dans des fich
 Votre scrum master estime qu’il est maintenant temps d’intégrer une base de données 
 dans l’application et ainsi d’assurer la persistance mais aussi l’intégrité des données.
 
-## Spécifications fonctionnelles :
-
-- L’application n’est accessible qu’aux seuls utilisateurs connectés.
-
-- Quand un utilisateur non connecté va sur l’application il est redirigé vers une page 
-de connexion avec un formulaire.
-
-- Un utilisateur se connecte à l’aide d’une adresse mail et d’un mot de passe.
-
-- Une fois connecté, l’utilisateur voit uniquement ses comptes en banque personnels.
-
-- Quand l’utilisateur clique sur un compte en banque, il arrive sur une page dédié au 
-compte où il voit les informations du compte mais aussi les dernières opérations 
-effectuées sur le compte.
-
-##
-Spécifications techniques :
+## Spécifications techniques :
 
 - SGBD : MySQL
 
@@ -202,3 +186,68 @@ les plus pertinents et efficaces.
 
 - Implantez un système de connexion des utilisateurs dans le projet, sans base de données 
 pour l’instant (un seul utilisateur peut se connecter).
+
+
+
+# Dynamiser son application bancaire
+
+Maintenant que votre base de données est prête, vous avez un sprint d’une semaine pour 
+intégrer les fonctionnalités suivantes : 
+
+## Spécifications fonctionnelles :
+
+- L’application n’est accessible qu’aux seuls utilisateurs connectés.
+
+- Quand un utilisateur non connecté va sur l’application il est redirigé vers une page de 
+connexion avec un formulaire.
+
+- Un utilisateur se connecte à l’aide d’une adresse mail et d’un mot de passe.
+
+- Un utilisateur connecté peut se déconnecter.
+
+- Une fois connecté, l’utilisateur voit uniquement ses comptes en banque personnels. 
+Pour l’instant il ne voit pas la dernière opération effectuée sur le compte, 
+juste les comptes avec leurs informations.
+
+- Quand l’utilisateur clique sur un compte en banque, il arrive sur une page dédié au 
+compte où il voit les informations du compte mais aussi les dernières opérations 
+effectuées sur le compte.
+
+- Via une page dédiée un utilisateur peut créer un nouveau compte personnel à l’aide d’un
+formulaire. 
+Une fois créé le compte apparaît sur la page d’accueil. 
+Attention le compte doit respecter les conditions minimum de création de compte 
+(bon type et bon montant).
+
+- L’utilisateur peut effectuer des dépôts ou des retraits sur le compte de son choix. 
+Le montant du compte est alors mis à jour et une nouvelle opération est enregistrée 
+sur le compte.
+
+## Spécifications techniques :
+
+- PHP7
+
+- Utilisation de PDO pour se connecter à la base de données
+
+- SGBD : Mysql
+
+- Serveur : Apache2
+
+- Réaliser une arborescence fonctionnelle du site avec les pages et les actions réalisables 
+sur ces pages.
+
+- Le site est également mis en ligne sur un serveur mutualisé.
+
+- L’utilisateur peut effectuer des transfères d’un compte à l’autre, ce qui crée deux 
+nouvelles opérations.
+
+- Des messages d’erreur sont affichés sur les différents formulaires quand ceux-ci
+sont mal remplis.
+
+- L’utilisateur peut supprimer les comptes qui lui appartiennent.
+
+- Sur la page d’accueil, pour chaque compte l’utilisateur voit la dernière opération sur 
+ce compte.
+
+- L’utilisateur peut accéder à la page de son profil et mettre à jour ses informations 
+personnels.
