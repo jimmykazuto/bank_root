@@ -1,10 +1,46 @@
-<?php
-    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ===  "lol")
-    {
-        header("Location: index.php");
-        exit();
+<!-- Se connecter à la BDD -->
+<?php 
+    try {
+        $db = new PDO('mysql:host=localhost;dbname=banque_php', 'banquePHP', 'banquePHP');
+    } catch (PDOExeption $e) {
+        print "Erreur !: " . $e->getMessage() . "<br/>";
+        die();
     }
-    $site_title = "Connexion";
+
+    // si le bouton submit est cliqué
+    if(!empty($_POST) AND isset($_POST["valider"])) {
+        //Requête pour sécurisé l'entrée utilisateur contre les injections
+        $query = $db->prepare(
+            "SELECT * FROM User
+            WHERE email = :email"
+        );
+        $query->execute([
+            "email" => $_POST["email"]
+        ]);
+    
+        // Extraire les informations de la requête
+        $user = $query->fetch(PDO::FETCH_ASSOC);
+        // var_dump($user);
+        // si un utilisateur a été trouvé
+        if($user) {
+            // si le mdp est le bon
+            if(password_verify($_POST["password"], $user["password"])) {
+                // echo "OK";
+                // Démarrer une session
+                session_start();
+                // var_dump($_SESSION);
+                $_SESSION["user"] = $user;
+                // var_dump($_SESSION);
+                header("Location: http://127.0.0.1/bank_root/compte.php");
+            }
+            else {
+                echo "L'identifiant ou le mot de passe sont incorrect";
+            }
+        }
+    }
+?>
+
+<?php 
     include ("template/nav.php");
     include ("template/header.php");
 ?>
@@ -13,33 +49,28 @@
     <h4>Vous connecter : </h4>
 
     <!-- Sécurité pour empêcher un utilisateur malveillant d'hacker l'URL -->
-    <form action="connexion.php" method="post" action="">
+    <form action="" method="POST">
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" name="email" class="form-control" id="inputEmail4">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" id="email">
             </div>
             <div class="form-group col-md-6">
-                <label for="inputPassword4">Mot de passe</label>
-                <input type="password" name="mot_de_passe" class="form-control" id="inputPassword4">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" class="form-control" id="password">
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Valider</button>
-
-        <div class = "connexion">
-            <?php
-                if (empty($_POST['mot_de_passe'])) {
-                    echo "rentrez votre adresse mail et votre mot de passe";
-                }
-                else {
-                    echo "mot de passe erroné";
-                }
-            ?>
-        </div>
+        <button type="submit" name="valider" class="btn btn-primary">Valider</button>
 
     </form>
+    <hr>
+    <section>
+        <h4>Vous n'êtes pas encore inscrit chez nous :</h4>
+        <p>Cliquez sur ce lien, il vous redirigera vers </p>
+        <a href="creerCompte.php"><button type="button" class="btn btn-primary">Créer un compte</button></a>
+    </section>
 </main>
 
 <?php 

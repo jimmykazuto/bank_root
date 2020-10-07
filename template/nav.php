@@ -20,7 +20,7 @@
 
   <link rel="stylesheet" href="public/css/normalize.css">
   <link rel="stylesheet" href="public/css/main.css">
-  <link rel="stylesheet" href="public/css/taux_bourse.css">
+  <!-- <link rel="stylesheet" href="public/css/taux_bourse.css"> -->
   <link rel="stylesheet" href="public/css/faq.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -59,7 +59,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="creerCompte.php">Créer un compte</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="index.php">Consulter mes comptes</a>
+            <a class="dropdown-item" href="compte.php">Consulter mes comptes</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="supprimer.php">Supprimer un compte</a>
       </div>

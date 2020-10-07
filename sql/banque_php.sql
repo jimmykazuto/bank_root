@@ -7,10 +7,10 @@ CREATE DATABASE banque_php DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE banque_php;
 
 -- delete the user if it is already present in the database
-DROP USER IF EXISTS "banquePHP'@'localhost";
+DROP USER IF EXISTS 'banquePHP'@'localhost';
 
 -- create a user account with management rights on the database
-CREATE USER "banquePHP'@'localhost";
+CREATE USER 'banquePHP'@'localhost';
 
 -- give rights to the created user
 GRANT ALL PRIVILEGES ON banque_php.* To 'banquePHP'@'localhost' IDENTIFIED BY 'banquePHP';
@@ -33,7 +33,7 @@ ENGINE=InnoDB;
 -- creation of data rows in the table
 INSERT INTO User (firstname, lastname, birth_date, email, password, country, adress, postal_code, city)
 VALUES ('Lerouxel', 'Aurelie',"1981-08-19", 'aurelielerouxel@cacraint.fr', 'lol', 'france', '9 rue du buisson', 27180, 'st sebastien du mordor'),
-    ('Penneflamme', 'Katty', "1978-11-07", 'tunes@pas.fr', 'i8m2p', 'france', '2 notre', 01010, 'galaxie');
+    ('Penneflamme', 'Katty', "1978-11-07", 'tunes@pas.fr', 'mdr', 'france', '2 notre', 01010, 'galaxie');
 
 CREATE TABLE Account
 (
