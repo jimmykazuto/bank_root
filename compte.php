@@ -2,6 +2,8 @@
     require "template/session_start.php"
 ?>
 
+
+
 <?php
 $site_title = "Mes comptes";
 include "template/doctype_html.php";
