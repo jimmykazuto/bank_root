@@ -1,5 +1,8 @@
+
+
 <?php 
     $site_title = "Mon compte";
+    include ("template/doctype_html.php");
     include ("template/nav.php");
     include ("template/header.php");
     require ("data/accounts.php");

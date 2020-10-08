@@ -1,18 +1,10 @@
-<?php 
-    // session_start();
-    // if(!isset($_SESSION["user"]) AND empty($_SESSION["user"]){
-    //     header("Location: http://127.0.0.1/bank_root/connexion.php");
-    // })
-    // try {
-    //     $db = new PDO('mysql:host=localhost;dbname=banque_php', 'banquePHP', 'banquePHP');
-    // } catch (PDOExeption $e) {
-    //     print "Erreur !: " . $e->getMessage() . "<br/>";
-    //     die();
-    // }
+<?php
+    require "template/session_start.php"
 ?>
 
 <?php
 $site_title = "Mes comptes";
+include "template/doctype_html.php";
 include "template/nav.php";
 include "template/header.php";
 include "data/accounts.php";

@@ -1,5 +1,6 @@
 <?php 
     $site_title = "Bourse";
+    include ("template/doctype_html.php");
     include ("template/nav.php");
     include ("template/header.php");
 ?>
