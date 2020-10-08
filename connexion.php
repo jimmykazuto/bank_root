@@ -34,13 +34,14 @@
                 header("Location: http://127.0.0.1/bank_root/compte.php");
             }
             else {
-                echo "L'identifiant ou le mot de passe sont incorrect";
+                echo '<center><font color="red"><b>Identifiant ou mot de passe incorrect</center></font><br />';
             }
         }
     }
 ?>
 
 <?php 
+    include ("template/doctype_html.php");
     include ("template/nav.php");
     include ("template/header.php");
 ?>

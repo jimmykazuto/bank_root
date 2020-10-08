@@ -1,5 +1,6 @@
 <?php 
     $site_title = "Articles";
+    include ("template/doctype_html.php");
     include ("template/nav.php");
     include ("template/header.php");
 ?>

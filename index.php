@@ -1,5 +1,6 @@
 <?php
 $site_title = "Bank-Root";
+include "template/doctype_html.php";
 include "template/nav.php";
 include "template/header.php";
 ?>

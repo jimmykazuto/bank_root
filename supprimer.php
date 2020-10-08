@@ -1,5 +1,10 @@
+<?php
+    require "template/session_start.php"
+?>
+
 <?php 
     $site_title = "Supprimer compte";
+    include ("template/doctype_html.php");
     include ("template/nav.php");
     include ("template/header.php");
 ?>
