@@ -32,8 +32,8 @@ CREATE TABLE User
 ENGINE=InnoDB;
 -- creation of data rows in the table
 INSERT INTO User (firstname, lastname, birth_date, email, password, country, adress, postal_code, city)
-VALUES ('Lerouxel', 'Aurelie',"1981-08-19", 'aurelielerouxel@cacraint.fr', 'lol', 'france', '9 rue du buisson', 27180, 'st sebastien du mordor'),
-    ('Penneflamme', 'Katty', "1978-11-07", 'tunes@pas.fr', 'mdr', 'france', '2 notre', 01010, 'galaxie');
+VALUES ('Lerouxel', 'Aurelie',"1981-08-19", 'aurelielerouxel@cacraint.fr', '$2y$10$EXcHoT0T2gEXVbN2pIf/NeGAVGIHzq/dgrgFJk4zKP.EfUKLVzbBO', 'france', '9 rue du buisson', 27180, 'st sebastien du mordor'),
+    ('Penneflamme', 'Katty', "1978-11-07", 'tunes@pas.fr', '$2y$10$UC9Zmt.gpNALxoEvfD3ZDOj0J6HJqzdJ1isxwY0TfReemeCd0w4ka', 'france', '2 notre', 01010, 'galaxie');
 
 CREATE TABLE Account
 (
@@ -48,9 +48,9 @@ CREATE TABLE Account
 )
 ENGINE=InnoDB;
 INSERT INTO Account (account_type, user_id, account_number, amount, opening_date)
-VALUES ('livret_a', 2, '0256kih2487', -435.25, '2009/10/02'),
-    ('compte_courant', 2, '2489fsf5487', 147.58, '2006/08/19'),
-    ('compte_courant', 1, '1464lol7458', 1435.25, '2001/04/24');
+VALUES ('livret a', 2, '0256kih2487', -435.25, '2009/10/02'),
+    ('compte courant', 2, '2489fsf5487', 147.58, '2006/08/19'),
+    ('compte courant', 1, '1464lol7458', 1435.25, '2001/04/24');
 
 CREATE TABLE Operation
 (
