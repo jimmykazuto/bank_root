@@ -62,6 +62,7 @@
             <h4>Votre nouveau compte : </h4>
             <?php
                 if (isset($_POST['email']) AND isset($_POST['name']) AND isset($_POST['last_name']) AND isset($_POST['street']) AND isset($_POST['city']) AND isset($_POST['code_postal']) AND isset($_POST['state']) AND isset($_POST['compte']) AND isset($_POST['montant']))
+                // $pass_hache = password_hash($_POST['pass'], PASSWORD_DEFAULT);
                 {
                     echo htmlspecialchars($_POST['email']) .'<br>'. htmlspecialchars($_POST['name']) .' '. htmlspecialchars($_POST['last_name']) .'<br>'.htmlspecialchars( $_POST['street']) .'<br>'. htmlspecialchars($_POST['code_postal']) .' '. htmlspecialchars($_POST['city']) .'<br>'. htmlspecialchars($_POST['state']) .'<br>'. 'Type de compte : ' . htmlspecialchars($_POST['compte']) .'<br>'. htmlspecialchars($_POST['montant']) . ' euros'.'<br>';
                 }

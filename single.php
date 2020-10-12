@@ -18,23 +18,31 @@
         die();
     }
 
-    $account_banquephp = $db->query(
+    $query = $db->prepare(
         "SELECT *
         FROM Account 
-        LEFT JOIN User 
-        ON account.user_id = user.id
+        LEFT JOIN Operation 
+        ON account.id = operation.account_id
+        WHERE acoount_id = :account_id
         ");
 
-    $accounts = $account_banquephp->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($accounts);
+    // $query -> execute ([
+
+    // ]);
+        var_dump($query);
+    $account = $query->fetchAll(PDO::FETCH_ASSOC);
+    // var_dump($accounts);
+    echo "<p>" . var_dump($account) ."<br>" . "</p>";
+
+    
 ?>
 
 <h2>Vous consultez le compte :</h2>
 
-<div class="col-12 col-sm-10 col-md-6 col-lg-4">
+<div class="col-12 col-sm-10 col-md-6 col-lg-8">
     <div class="card text-center">
         <section class="card-body">
-            <h5 class="card-title"><?php echo $accounts["account_type"];?></h5>
+            <h5 class="card-title"><?php echo $account["account_type"];?></h5>
             <h6 class="card-subtitle mb-2 text-muted"><?php echo $account["number"];?></h6>
             <hr>
             <ul class="list-group list-group-flush">

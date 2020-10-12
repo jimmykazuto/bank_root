@@ -11,6 +11,8 @@ include "data/accounts.php";
 ?>
 
 <?php 
+// if(isset($_SESSION["user"]) {
+
   try {
         $db = new PDO('mysql:host=localhost;dbname=banque_php', 'banquePHP', 'banquePHP');
     } catch (PDOExeption $e) {
@@ -18,18 +20,27 @@ include "data/accounts.php";
         die();
     }
 
-// condition avec $_SESSION (appel en bdd id utilisateur)
-
-    $account_banquephp = $db->query(
+// condition avec $_SESSION (appel en bdd id utilisateur)<!-- $_SESSION["user"] = $user; -->
+// if ($user["id"] = $_SESSION["user"]["id"]) {
+    // if ($_SESSION["user"] = $user){
+    $query = $db->prepare(
         "SELECT *
+        -- SELECT a.id AS a_id, a.account_tye, a.account_number, u.firstname
         FROM Account 
-        LEFT JOIN User 
+        INNER JOIN User
         ON account.user_id = user.id
+        WHERE user_id = :user_id
         ");
 
-    $accounts = $account_banquephp->fetchAll(PDO::FETCH_ASSOC);
+        $query->execute([
+            "user_id" => $_SESSION["user"]["id"]
+        ]);
+    $accounts = $query->fetchAll(PDO::FETCH_ASSOC);
     // var_dump($accounts);
-
+// }
+// else {
+//     echo "bordayl";
+// }
 ?>
 
 <h2>Vos comptes</h2>
