@@ -32,7 +32,9 @@
         <div class="dropdown-menu">
             <a class="dropdown-item" href="connexion.php">Se connecter</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="creerCompte.php">Créer un compte</a>
+            <a class="dropdown-item" href="inscription.php">S'inscrire</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="creerCompte.php">Créer un nouveau compte bancaire</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="compte.php">Consulter mes comptes</a>
             <div class="dropdown-divider"></div>
