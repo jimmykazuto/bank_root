@@ -1,8 +1,8 @@
 <?php 
-    $site_title = "Créer un compte";
-    include ("template/doctype_html.php");
-    include ("template/nav.php");
-    include ("template/header.php");
+    $site_title = "S'inscrire";
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
 ?>
 
 <main class="container">
@@ -79,5 +79,5 @@
   </main>
 
 <?php 
-    include ("template/footer.php");
+    include ("view/template/footer.php");
 ?>

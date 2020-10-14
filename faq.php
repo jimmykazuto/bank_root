@@ -1,8 +1,8 @@
 <?php 
     $site_title = "FAQ";
-    include ("template/doctype_html.php");
-    include ("template/nav.php");
-    include ("template/header.php");
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
 ?>
 
 <main class="container">
@@ -56,5 +56,5 @@
 <?php $script = "<script src='public/js/faq.js'></script>"; ?>
 
 <?php 
-    include "template/footer.php";
+    include "view/template/footer.php";
 ?>

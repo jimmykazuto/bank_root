@@ -1,12 +1,12 @@
 <?php
-    require "template/session_start.php"
+    require "model/session_start.php"
 ?>
 
 <?php 
     $site_title = "Créer un compte";
-    include ("template/doctype_html.php");
-    include ("template/nav.php");
-    include ("template/header.php");
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
 ?>
 
 <?php 
@@ -99,5 +99,5 @@
   </main>
 
 <?php 
-    include ("template/footer.php");
+    include ("view/template/footer.php");
 ?>

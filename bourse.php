@@ -1,12 +1,12 @@
 <?php 
     $site_title = "Bourse";
-    include ("template/doctype_html.php");
-    include ("template/nav.php");
-    include ("template/header.php");
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
 ?>
 
 <?php 
-    include ("data/taux_bourse.php");
+    include ("model/data/taux_bourse.php");
 ?>
 
 <main class="container">
@@ -26,5 +26,5 @@
 <?php $script = "<script src='public/js/bourse.js'></script>"; ?>
 
 <?php 
-    include ("template/footer.php");
+    include ("view/template/footer.php");
 ?>

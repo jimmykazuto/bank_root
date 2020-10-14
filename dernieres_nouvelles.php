@@ -1,8 +1,8 @@
 <?php 
     $site_title = "Articles";
-    include ("template/doctype_html.php");
-    include ("template/nav.php");
-    include ("template/header.php");
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
 ?>
 
 <?php 
@@ -23,5 +23,5 @@
 <?php $script = "<script src='js/articles.js'></script>"; ?>
 
 <?php 
-    include ("template/footer.php");
+    include ("view/template/footer.php");
 ?>
