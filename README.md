@@ -251,3 +251,44 @@ ce compte.
 
 - L’utilisateur peut accéder à la page de son profil et mettre à jour ses informations 
 personnels.
+
+
+
+# Intégrer la POO dans une application MVC
+
+Maintenant que votre application est en ligne, de nombreux bugs et demandes d’amélioration 
+ont été remontés à votre product owner.
+ 
+La squad projet s’est déjà attelée à leur résolution mais le travail est plus compliqué que 
+prévu.
+ 
+Il est difficile d’intervenir dans le code mais aussi de comprendre l’organisation de 
+l’application et l’implémentation des fonctionnalités.
+
+Une réunion a donc été organisée avec l’équipe projet par le scrum master et vous avez décidé 
+de faire évoluer l’application vers une application objet organisée avec le pattern MVC.
+
+Pas de nouvelles fonctionnalités mais votre code doit être écrit en orienté objet partout où 
+cela est possible et vous refactorez l’application entre model view et controller.
+
+En ce qui concerne les requêtes SQL, vous mettez en place les transactions à minima sur 
+l’opération de débit et de crédit.
+
+Cela signifie que vous réalisez un diagramme de classes. 
+
+Vous mettez également votre projet en ligne chez un hébergeur.
+
+## Pour aller plus loin :
+- Intégrez une nouvelle table dans votre application qui aura pour objectif de stocker les 
+types de comptes bancaires autorisés et utilisez cette table pour tout ce qui concerne les 
+types de comptes.
+
+- Parmi les utilisateur intégrez le rôle conseiller. 
+En effet tous vos utilisateurs sont pour l’instant des utilisateurs lambda mais normalement 
+l’application serait également accessible aux banquiers. 
+Ces derniers ont une liste de client dont ils peuvent accéder aux comptes et aux informations.
+
+- Proposez à l’utilisateur connecté de pouvoir modifier les informations de son profil via 
+un formulaire. 
+Certaines informations comme son age ne sont pas modifiables mais l’adresse par exemple 
+peut faire l’objet d’un changement.
