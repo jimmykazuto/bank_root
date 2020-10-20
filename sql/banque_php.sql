@@ -48,7 +48,7 @@ CREATE TABLE Account
 )
 ENGINE=InnoDB;
 INSERT INTO Account (account_type, user_id, account_number, amount, opening_date)
-VALUES ('livret a', 2, '0256kih2487', -435.25, '2009/10/02'),
+VALUES ('livret a', 1, '0256kih2487', -435.25, '2009/10/02'),
     ('compte courant', 2, '2489fsf5487', 147.58, '2006/08/19'),
     ('compte courant', 1, '1464lol7458', 1435.25, '2001/04/24');
 
