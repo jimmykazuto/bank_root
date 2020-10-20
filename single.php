@@ -1,48 +1,35 @@
 <?php 
-    $site_title = "Mon compte";
-    include ("view/template/doctype_html.php");
-    include ("view/template/nav.php");
-    include ("view/template/header.php");
-    require ("model/data/accounts.php");
-    if(isset($_GET["pos"])) {
-        $pos = htmlspecialchars($_GET["pos"]);
-        $account = $accounts[$pos];
-    }
-?>
+  include "model/session_start.php";
 
-<?php 
-  try {
+    // if(isset($_GET["pos"]) AND ($_GET["pos"] > 0)) {
+    //     $pos = htmlspecialchars($_GET["pos"]);
+    //     $account = $accounts[$pos];
+    // }
+
+    try {
         $db = new PDO('mysql:host=localhost;dbname=banque_php', 'banquePHP', 'banquePHP');
     } catch (PDOExeption $e) {
         print "Erreur !: " . $e->getMessage() . "<br/>";
         die();
     }
 
-    // if (empty($_GET) || !isset($_GET["id"])) {
-    //     header("Location: http://127.0.0.1/bank_root/inscription.php");
-    //   }
-
-    //   $id = ($_GET["id"];
-
     $query = $db->prepare(
         "SELECT *
-        FROM Account 
-        LEFT JOIN Operation 
-        ON id = account_id
-        WHERE id = :id
-        ");
+        FROM Operation
+        LEFT JOIN Account ON operation.account_id = account.id
+        LEFT JOIN User ON account.user_id = user.id
+        WHERE account.user_id = :user_id
+    ");
+    // var_dump($query);
 
-    $query -> execute ([
-        "id" => $id
+    $query->execute ([
+        "user_id" => $_SESSION["user"]["id"]
     ]);
+    // var_dump($query);
     $account = $query->fetchAll(PDO::FETCH_ASSOC);
     var_dump($account);
 ?>
 
 <?php 
-    require "view/singleView.php";
-?>
-
-<?php 
-    include ("view/template/footer.php");
+    require ("view/singleView.php");
 ?>

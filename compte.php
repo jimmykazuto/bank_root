@@ -1,13 +1,11 @@
 <?php
-    require "model/session_start.php"
-?>
+    require ("model/session_start.php");
 
-<?php
-$site_title = "Mes comptes";
-include "view/template/doctype_html.php";
-include "view/template/nav.php";
-include "view/template/header.php";
-include "model/data/accounts.php";
+    $site_title = "Mes comptes";
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
+    // include ("model/data/accounts.php");
 ?>
 
 <?php 
@@ -33,11 +31,9 @@ include "model/data/accounts.php";
 ?>
 
 <?php 
-    require "view/compteView.php";
-?>
+    require ("view/compteView.php");
 
-<?php $script = "<script src='public/js/layer.js'></script>"; ?>
+    $script = "<script src='public/js/layer.js'></script>";
 
-<?php
-    include "view/template/footer.php";
+    include ("view/template/footer.php");
 ?>

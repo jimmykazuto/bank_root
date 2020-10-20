@@ -3,12 +3,12 @@
 session_start();
 
 // On écrase le tableau de session
-$_SESSION = array();
+if(isset($_SESSION["user"])){
 
+    $_SESSION = array();
 
-// On détruit la session
-session_destroy();
+    // On détruit la session
+    session_destroy();
 
-header("Location: http://127.0.0.1/bank_root/index.php");
-
-?>
+    header("Location: http://127.0.0.1/bank_root/index.php");
+}

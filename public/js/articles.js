@@ -5,7 +5,7 @@ let httpRequest = new XMLHttpRequest();
 httpRequest.onreadystatechange = function() {
 
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
-         if (httpRequest.status === 200) {
+        if (httpRequest.status === 200) {
             //  Store the json file in a variable
             let blog = JSON.parse(httpRequest.responseText);
             console.log(blog);
@@ -38,10 +38,10 @@ httpRequest.onreadystatechange = function() {
             }
 
         } 
-         else {
+        else {
             // there was a problem with the request,
             console.log("ERROR");
-         }
+        }
 
      } 
     else {

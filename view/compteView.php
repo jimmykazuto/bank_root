@@ -16,6 +16,7 @@ foreach ($accounts as $key => $accounts) :
             <a href="depot-retrait.php" class="btn btn-primary">Dépot/Retrait</a>
             <a href="virement.php" class="btn btn-primary">Virement</a>
             <a href="supprimer.php" class="btn btn-primary">Cloturer</a>
+            
             <a href="single.php?pos=<?php echo $key; ?>">Voir le compte</a>
         </section>
     </div> 
