@@ -3,11 +3,11 @@
   include ("view/template/doctype_html.php");
   include ("view/template/nav.php");
   include ("view/template/header.php");
-  require ("model/data/accounts.php");
+  // require ("model/data/accounts.php");
 ?>
 
 <h2>Votre compte</h2>
-<div class="">
+<div class="row">
   <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-5">
     <div class="card text-center">
       <section class="card-body">
@@ -23,8 +23,23 @@
         <a href="single.php?pos=<?php echo $key; ?>">Voir le compte</a>
       </section>
     </div> 
+    <div>
+      <!-- table last operations -->
+      <table class="table">
+        <thead class="thead-dark" id="headList">
+            <!-- th -->
+        </thead>
+        <tbody id="list">
+            <tr>
+                <th scope="row index"></th>
+                <!-- td -->
+            </tr>
+        </tbody>
+    </table>
+    </div>
   </div>
 </div>
+
 
 <?php 
   include ("view/template/footer.php");
