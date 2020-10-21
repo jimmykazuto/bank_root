@@ -1,14 +1,11 @@
 <?php 
-    require "model/session_start.php";
-
-    $site_title = "Créer un compte";
     include ("view/template/doctype_html.php");
     include ("view/template/nav.php");
     include ("view/template/header.php");
 ?>
 
 <main class="container">
-    <form action="creerCompte.php" method="post">
+    <form action="" method="post">
 
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -23,11 +20,15 @@
                     <option>Plan d'Épargne Retraite</option>
                 </select>
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-6">
+                <label for="account_number">Numéro de compte :</label>
+                <input class="form-control" name="account_number" type="text" placeholder="0000XXX0000">
+            </div>
+            <div class="form-group col-md-6">
                 <label for="amount">Montant à déposer :</label>
                 <input class="form-control" name="amount" type="text" placeholder="50 euros minimum">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-6">
                 <label for="opening_date">La date de création du compte</label>
                 <input class="form-control" name="opening_date" type="text" placeholder="YYYY-MM-DD">
             </div>
