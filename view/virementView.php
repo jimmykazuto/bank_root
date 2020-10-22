@@ -11,8 +11,8 @@
     <form action="virement.php" method="post">
 
         <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="exampleFormControlSelect1">Quel type de compte voulez-vous débiter ?</label>
+            <div class="form-group col-md-4">
+                <label for="exampleFormControlSelect1">Compte à débiter</label>
                 <select class="form-control" name="compte" id="exampleFormControlSelect1">
                     <option>Choisissez le de compte</option>
                     <option>Compte courant</option>
@@ -23,8 +23,8 @@
                     <option>Plan d'Épargne Retraite</option>
                 </select>
             </div>
-            <div class="form-group col-md-6">
-                <label for="exampleFormControlSelect1">Quel type de compte voulez-vous créditer ?</label>
+            <div class="form-group col-md-4">
+                <label for="exampleFormControlSelect1">Compte à créditer</label>
                 <select class="form-control" name="compte" id="exampleFormControlSelect1">
                     <option>Choisissez le compte</option>
                     <option>Compte courant</option>
@@ -35,13 +35,13 @@
                     <option>Plan d'Épargne Retraite</option>
                 </select>
             </div>
-        </div>
-        <div class="form-group">
+            <div class="form-group col-md-4">
                 <label for="inputMontant">Montant à transférer</label>
-                <input class="form-control" name="montant" type="text" placeholder="50 euros minimum">
+                <input class="form-control" name="montant" type="number" step="1" id="amount" min="1" value="50">
             </div>
+        </div>
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Valider</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" name="operation">Valider</button>
 
     </form>
 </main>

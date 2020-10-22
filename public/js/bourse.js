@@ -43,7 +43,7 @@ httpRequest.onreadystatechange = function() {
     }
 };
 // opening and sending of the request,
-httpRequest.open('GET', 'articles.json', true);
+httpRequest.open('GET', 'model/data/bourse.json', true);
 httpRequest.send();
 
 // style of table
