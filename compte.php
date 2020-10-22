@@ -19,8 +19,6 @@
     $query = $db->prepare(
         "SELECT *
         FROM Account 
-        INNER JOIN User
-        ON account.user_id = user.id
         WHERE user_id = :user_id
         ");
 
@@ -33,7 +31,7 @@
 <?php 
     require ("view/compteView.php");
 
-    $script = "<script src='public/js/layer.js'></script>";
+    // $script = "<script src='public/js/layer.js'></script>";
 
     include ("view/template/footer.php");
 ?>
