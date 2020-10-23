@@ -32,6 +32,10 @@
                 <label for="opening_date">La date de création du compte</label>
                 <input class="form-control" name="opening_date" type="text" placeholder="YYYY-MM-DD">
             </div>
+            <!-- <div class="form-group col-md-4">
+                <label for="user_id">Numéro d'utilisateur :</label>
+                <input class="form-control" name="user_id" type="text" placeholder="">
+            </div> -->
         </div>
 
         <button type="submit" class="btn btn-primary btn-lg btn-block" name="fill_form">Confirmer la création d'un nouveau compte.</button>

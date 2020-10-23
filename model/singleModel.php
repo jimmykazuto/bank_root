@@ -18,10 +18,14 @@ function getSingleAccount(array $user, int $id) {
         AND Account.id = :id
     ");
 
-// 2 exécuter la requête  5
+// 2 exécuter la requête  5 récupérer mon objet
     $query->execute ([
         "user_id" => $user["id"],
-        "id" => $id
+        "id" => $id,
+        // "account_type" => $user->getAccount_type(),
+        // "account_number" => $user->getAccount_number(),
+        // "lastname" => $user->getLastname(),
+        // "firstname" => $user->getFirstname()
     ]);
     $account = $query->fetch(PDO::FETCH_ASSOC);
 // 3 Vérifier que la requête est bien éxécutée

@@ -1,5 +1,5 @@
 <?php
-    class Single {
+    class SingleAccount {
         private string $account_type;
         private string $account_number;
         private string $lastname;
@@ -19,19 +19,22 @@
         }
 
         public function getAccount_type():string {
-            $this->account_type;
+            return $this->account_type;
         }
-        public function gatAccount_number():string {
-            $this->account_number;
+        public function getAccount_number():string {
+            return $this->account_number;
         }
         public function getLastname():string {
-            $this->lastname;
+            return $this->lastname;
         }
         public function getFirstname():string {
-            $this->firstname;
+            return $this->firstname;
         }
 
-        public function __construct() {
-
+        public function __construct(array $data, int $id) {
+            $this->setAccount_type($data["account_type"]);
+            $this->setAccount_number($data["account_number"]);
+            $this->setLastname($data["lastname"]);
+            $this->setFirstname($data["firstname"]);
         }
     }
