@@ -1,5 +1,5 @@
 <?php
-    include ("model/session_start.php");
+    // include ("model/session_start.php");
     include ("model/creerCompteModel.php");
     include ("model/entity/account.php");
 
@@ -7,8 +7,8 @@
 
     if(!empty ($_POST) AND isset($_POST["fill_form"])) {
         $account = new Account($_POST);
-        var_dump($account);
         newAccount($account);
+        var_dump($account);
     }
 
     require ("view/creerCompteView.php");
