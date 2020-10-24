@@ -13,20 +13,17 @@ function getSingleAccount(array $user, int $id) {
     $query = $db->prepare(
         "SELECT *
         FROM Account
-        -- LEFT JOIN Operation ON operation.account_id = Account.id
+        LEFT JOIN Operation ON operation.account_id = Account.id
         WHERE Account.user_id = :user_id
-        AND Account.id = :id
-    ");
+        AND Account.id = :id"
+    );
 
 // 2 exécuter la requête  5 récupérer mon objet
     $query->execute ([
         "user_id" => $user["id"],
         "id" => $id,
-        // "account_type" => $user->getAccount_type(),
-        // "account_number" => $user->getAccount_number(),
-        // "lastname" => $user->getLastname(),
-        // "firstname" => $user->getFirstname()
     ]);
+    
     $account = $query->fetch(PDO::FETCH_ASSOC);
 // 3 Vérifier que la requête est bien éxécutée
     return $account;
