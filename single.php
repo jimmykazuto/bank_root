@@ -1,6 +1,7 @@
 <?php 
   include ("model/session_start.php");
   include ("model/singleModel.php");
+  // include ("model/operationModel.php");
   include ("model/entity/singleAccount.php");
 
 //   4 vérifier l'affichage de la requête en passant d'un tableau multidimentionnel à un tableau associatif
@@ -8,10 +9,6 @@
     if(isset($_GET["id"]) AND ($_GET["id"] > 0)) {
         $pos = htmlspecialchars($_GET["id"]);
         $account = getSingleAccount($_SESSION["user"], $pos);
-        $singleAccount = new SingleAccount;
-        var_dump($singleAccount);
-        // getSingleAccount($account);
-        // var_dump($account);
     }
 
     require ("view/singleView.php");

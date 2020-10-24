@@ -31,10 +31,10 @@
             return $this->firstname;
         }
 
-        public function __construct(array $data, int $id) {
-            $this->setAccount_type($data["account_type"]);
-            $this->setAccount_number($data["account_number"]);
-            $this->setLastname($data["lastname"]);
-            $this->setFirstname($data["firstname"]);
-        }
+        // public function __construct(array $data) {
+        //     $this->setAccount_type($data["account_type"]);
+        //     $this->setAccount_number($data["account_number"]);
+        //     $this->setLastname($data["lastname"]);
+        //     $this->setFirstname($data["firstname"]);
+        // }
     }

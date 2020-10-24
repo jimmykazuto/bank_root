@@ -8,7 +8,7 @@
     if(!empty ($_POST) AND isset($_POST["fill_form"])) {
         $account = new Account($_POST);
         newAccount($account);
-        var_dump($account);
+        // var_dump($account);
     }
 
     require ("view/creerCompteView.php");
