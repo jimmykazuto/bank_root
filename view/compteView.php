@@ -1,3 +1,9 @@
+<?php 
+    include ("view/template/doctype_html.php");
+    include ("view/template/nav.php");
+    include ("view/template/header.php");
+?>
+
 <h2>Vos comptes</h2>
 <div class="row">
     <?php
@@ -26,3 +32,8 @@
     endforeach;
     ?>
 </div>
+
+<?php 
+    // $script = "<script src='public/js/layer.js'></script>";
+    include ("view/template/footer.php");
+?>

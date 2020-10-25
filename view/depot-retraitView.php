@@ -22,7 +22,7 @@
     </div>
     <div class="form-group col-md-4">
         <label for="amount">Montant en euros</label><br>
-        <input class="form-control" name="montant" type="number" step="1" id="amount" min="1" value="1">
+        <input class="form-control" name="amount" type="number" step="1" id="amount" min="1" value="1">
     </div>
     <div class="text-center col-md-12">
         <button type="submit" class="btn btn-primary btn-lg btn-block" name="operation">Exécuter</button>
