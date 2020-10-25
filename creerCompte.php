@@ -1,7 +1,7 @@
 <?php
     // include ("model/session_start.php");
     include ("model/creerCompteModel.php");
-    include ("model/entity/account.php");
+    include ("model/entity/CreateAccount.php");
 
     $site_title = "Créer un compte";
 
