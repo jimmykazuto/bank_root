@@ -7,10 +7,14 @@
         die();
     }
 
-    $query = $db->prepare();
+    // $query = $db->prepare(
+        // "DELETE
+        // FROM Account
+        // WHERE 'account' = $_SESSION($user["id"])
+    // ");
 
     $query->execute ([]);
 
-    $ = $query->fetch(PDO::FETCH_ASSOC);
+    $supprimerCompte = $query->fetch(PDO::FETCH_ASSOC);
 
-    return $;
+    return $supprimerCompte;

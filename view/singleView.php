@@ -41,7 +41,7 @@
             <tr>
               <td><?php echo $account["account_type"]; ?></td>
               <td><?php echo $account["operation_type"]; ?></td>
-              <td><?php ?></td>
+              <td><?php echo $account["operation_amount"];?></td>
               <td><?php echo $account["operation_date"]; ?></td>
               <td><?php echo $account["account_balance"];?></td>
             </tr>
